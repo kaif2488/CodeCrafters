@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Crafters</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+    <link rel="Stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">Code Crafters</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/joinus.html">Become Developer</a></li>
+                            <li><a class="dropdown-item" href="#">Report Problem</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#singupModal">Singup</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!----------------------------------------------Loing---------------------------------------------->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------------------------------------Singup---------------------------------------------->
+
+    <!-- Modal -->
+    <div class="modal fade" id="singupModal" tabindex="-1" aria-labelledby="singupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="singupModalLabel">Get an CodeCrafters Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nameFormControlInput1" class="form-label">Your Name</label>
+                            <input type="name" class="form-control" id="nameFormControlInput1" placeholder="Your Name">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="cexampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Re Enter Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------Singup---------------------------------------------->
+    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active ">
+                <img class="img-fluid" src="/img 11.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <a href="/joinus.html">
+                    <img class="img-fluid" src="/2nd.png" class="d-block w-100" alt="..."></a>
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="/img 3333.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container marketing">
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h1 class="featurette-heading fw-normal lh-1">Why you Need Website ? <span
+                        class="text-body-secondary"></span></h1>
+                <p class="lead"><br>A Website is a crucial component of any business or startup's overall strategy. It can
+                    help businesses and startups establish an online presence, build credibility and trust, attract new
+                    customers, provide excellent customer service, and stay competitive in today's dynamic business
+                    environment..</p>
+            </div>
+            <div class="col-md-5 col-sm-3">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
+                    height="300" src="https://cdn-icons-png.flaticon.com/512/2721/2721725.png" class="img-fluid"
+                    role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+                    fill="var(--bs-secondary-color)" dy=".3em"></text>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Why you need professional Web Developers? <span
+                        class="text-body-secondary"></span></h2>
+                <p class="lead"><br> A professional web developer can provide a range of services that can help businesses
+                    and startups establish a strong online presence, enhance user experience, increase visibility, and
+                    generate leads. By leveraging the expertise of a professional web developer, businesses and startups
+                    can maximize their online potential and achieve long-term success.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
+                    height="300"  src="https://cdn-icons-png.flaticon.com/512/998/998412.png" class="img-fluid"
+                    role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+                    fill="var(--bs-secondary-color)" dy=".3em"></text>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Join us. <span class="text-body-secondary"></span></h2>
+                <p class="lead"><br>Code Crafters is a fast-growing tech company that is seeking a skilled and enthusiastic
+                    web developer to join our team. We are looking for someone who is passionate about creating
+                    beautiful, functional, and user-friendly websites that are optimized for performance and speed.<br>
+                    In return, we offer a competitive salary package, flexible working hours, and the opportunity to
+                    work on exciting projects with a talented team of professionals. You will also have the opportunity
+                    to grow and develop your skills through ongoing training and professional development opportunities.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
+                    height="300" src="https://cdn-icons-png.flaticon.com/512/2449/2449829.png" class="img-fluid"
+                    role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+                    fill="var(--bs-secondary-color)" dy=".3em"></text>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+
+    </div>
+
+    <!--------------------------------------------Pricing-------------------------------------------------------------->
+
+
+    <div class="container py-3">
+        <header>
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal">Pricing</h1>
+                <p class="fs-5 text-body-secondary">We have a three different Subscription Plans.</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Free</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$0<small
+                                    class="text-body-secondary fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Personal Developer</li>
+                                <li>Email support</li>
+                                <li>Help center access</li>
+                                <br>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Pro</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">₹25,000<small
+                                    class="text-body-secondary fw-light">/3mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Personal Developer</li>
+                                <li>For 3 Months</li>
+                                <li>Priority email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Purchase</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Enterprise</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">₹44,000<small
+                                    class="text-body-secondary fw-light">/6mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Personal Developer</li>
+                                <li>Hosting fees included</li>
+                                <li>Weekly meeting</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Purchase</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="display-6 text-center mb-4">Compare plans</h2>
+
+            <div class="table-responsive">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th style="width: 34%;"></th>
+                            <th style="width: 22%;">Free</th>
+                            <th style="width: 22%;">Pro</th>
+                            <th style="width: 22%;">Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-start">Personal Developer</th>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg>Yes</td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg>Yes</td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg>Yes</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Email and PhoneCalls</th>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg>Yes</td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg>Yes</td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg>Yes</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Hosting fees included</th>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg>No</td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg>Yes</td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg>Yes</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-start">Weekly meeting</th>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg>No</td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg>No</td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg>Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+    </div>
+    <br>
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2023–2024 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p>Developed by:Kaif Siddique</p>
+    </footer>
+</body>
+
+</html>
